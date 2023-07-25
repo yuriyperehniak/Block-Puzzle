@@ -1,9 +1,11 @@
-using UnityEngine;
 using Zenject;
 
-public class Bootstrapinstaller : MonoInstaller
+namespace Infrastructure
 {
-    public override void InstallBindings()
+    public class BootstrapInstaller : MonoInstaller
     {
+        public override void InstallBindings()
+        {
+        }
     }
 }
