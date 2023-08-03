@@ -1,19 +1,18 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
-    public SceneAsset scene;
+    public string sceneName;
 
     private void Start()
     {
-        gameObject.GetComponent<Button>()?.onClick.AddListener(LoadScene);        
+        gameObject.GetComponent<Button>()?.onClick.AddListener(LoadScene);       
     }
 
     private void LoadScene()
     {
-        SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene(sceneName);
     }
 }
