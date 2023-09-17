@@ -8,7 +8,7 @@ public class SceneController : MonoBehaviour
 
     private void Start()
     {
-        gameObject.GetComponent<Button>()?.onClick.AddListener(LoadScene);       
+        gameObject.GetComponent<Button>()?.onClick.AddListener(LoadScene);
     }
 
     private void LoadScene()
